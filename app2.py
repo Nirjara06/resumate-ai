@@ -275,7 +275,7 @@ def get_next_id(csv_path):
         return 1 if len(df) == 0 else int(df['ID'].max()) + 1
     except:
         return 1
-
+# Fixed PDF export formatting issue
 def extract_text_from_pdf(file_path):
     try:
         resource_manager = PDFResourceManager()
